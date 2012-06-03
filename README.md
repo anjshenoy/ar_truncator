@@ -1,6 +1,6 @@
 # ArTruncator
 
-Now you can do <table_name>.truncate. This was not incorporated into AR
+Now you can do tablename.truncate. This was not incorporated into AR
 as a patch because SQLite does not support truncate statements. See this 
 pull request for more detail:
 
