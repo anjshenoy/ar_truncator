@@ -1,6 +1,15 @@
 # ArTruncator
 
-TODO: Write a gem description
+Now you can do <table_name>.truncate. This was not incorporated into AR
+as a patch because SQLite does not support truncate statements. See this 
+pull request for more detail:
+
+https://github.com/rails/rails/issues/5510
+
+I'm releasing this as a gem, so I don't have to add it to my
+config/initializers.
+
+This has so far only been tested for mysql2 adapater/MySQL DB.
 
 ## Installation
 
@@ -18,7 +27,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+If you have a model called Dummy, to truncate it do:
+
+Dummy.truncate
+
+This will execute the following sql:
+
+"Truncate tabel Dummies".
+
+
 
 ## Contributing
 
