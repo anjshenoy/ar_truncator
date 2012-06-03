@@ -11,6 +11,9 @@ config/initializers.
 
 This has so far only been tested for mysql2 adapater/MySQL DB.
 
+Why truncate versus delete * ? Its more performant and it resets the
+primary key ID to 1. Useful when you're re-seeding/testing.
+
 ## Installation
 
 Add this line to your application's Gemfile:
